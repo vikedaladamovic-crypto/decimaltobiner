@@ -1,0 +1,18 @@
+def decimal_to_binary(number):
+ 
+  if number == 0:
+    return "0"
+  binary = ""
+  while number > 0:
+    binary = str(number % 2) + binary
+    number //= 2
+  return binary
+
+# Example usage:
+decimal_number = int(input("masukkan angka : "))
+binary_representation = decimal_to_binary(decimal_number)
+print(f"The binary representation of {decimal_number} is {binary_representation}")
+
+decimal_number = int(input("masukkan angka lagi : "))
+binary_representation = decimal_to_binary(decimal_number)
+print(f"The binary representation of {decimal_number} is {binary_representation}")
